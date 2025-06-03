@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Sobrevivência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🕹️ Jogo de Sobrevivência</h1>
+    <p>Pontuação: <span id="pontuacao">0</span> | Recorde: <span id="recorde">0</span></p>
+    <div id="jogo">
+        <div id="player"></div>
+    </div>
+    <button onclick="iniciarJogo()">Iniciar Jogo</button>
+
+    <div id="gameOverScreen" class="hidden">
+        <h2>💥 Game Over!</h2>
+        <p>Sua pontuação: <span id="finalScore">0</span></p>
+        <button onclick="reiniciarJogo()">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
